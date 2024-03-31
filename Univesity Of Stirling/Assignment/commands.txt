@@ -1,0 +1,23 @@
+# Commands that need to be executed before the file runhadoop.sh
+#   as this createes the file structure needed
+
+hdfs dfs -mkdir assignment
+
+hdfs dfs -copyFromLocal rating.txt assignment/rating.txt
+
+# Commands that might be useful once the runhadoop.sh file has been executed
+
+hdfs dfs -copyToLocal assignment/results/* results/* 
+
+# The command above copies the result files from the execution of the runhadoop.sh
+#   into the local filesystem, as in hdfs the cat command cannot be performed
+
+
+hdfs dfs -rm assignment/results/*
+
+hds dfs -rmdir assignment/results
+
+# The commands above erases all the content in the results directory and the directory itself.
+#   This is needed if we want to execute the runhadoop.sh file again, as the results directory MUST NOT
+#   exist
+

@@ -1,0 +1,14 @@
+but	1
+coffee,	1
+coffee.	1
+Coffee	1
+don't.	1
+I	3
+is	1
+like	1
+nice	2
+not	1
+really	3
+so	1
+want	1
+when	2
